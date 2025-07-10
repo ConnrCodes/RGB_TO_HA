@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension>
+   <name>RGB to HA Conversion</name>
+   <version>1.0.0</version>
+   <author>Connor</author>
+   <company>Connor</company>
+   <description>Advanced RGB to Hydrogen Alpha (HA) conversion with multiple algorithms and enhancement options.</description>
+   <copyright>Copyright (c) 2024 Connor. All rights reserved.</copyright>
+   <license>Proprietary</license>
+   <url>https://github.com/connor/rgb-to-ha</url>
+   <email>connor@example.com</email>
+   
+   <platforms>
+      <platform>Windows</platform>
+      <platform>macOS</platform>
+   </platforms>
+   
+   <pixinsight-versions>
+      <version>1.8.8</version>
+      <version>1.8.9</version>
+   </pixinsight-versions>
+   
+   <dependencies>
+      <dependency>PCL 1.8.8</dependency>
+   </dependencies>
+   
+   <files>
+      <file platform="Windows" arch="x64">RGBToHA-pxm.dll</file>
+      <file platform="macOS" arch="x64">RGBToHA-pxm.dylib</file>
+      <file>README.md</file>
+      <file>LICENSE</file>
+   </files>
+   
+   <installation>
+      <target>modules</target>
+      <requires-restart>true</requires-restart>
+   </installation>
+   
+   <metadata>
+      <category>ColorTransformation</category>
+      <tags>RGB, HA, Hydrogen Alpha, Conversion, Astronomy, Astrophotography</tags>
+      <keywords>RGB to HA, color conversion, spectral processing, image enhancement</keywords>
+   </metadata>
+</extension> 

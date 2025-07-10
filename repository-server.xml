@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository>
+   <name>RGB to HA Conversion</name>
+   <url>https://connrcodes.github.io/RGB_TO_HA</url>
+   <description>Advanced RGB to Hydrogen Alpha conversion plugin for PixInsight</description>
+   <maintainer>Connor</maintainer>
+   <email>connor@example.com</email>
+   
+   <extensions>
+      <extension>
+         <name>RGB to HA Conversion</name>
+         <version>1.0.0</version>
+         <author>Connor</author>
+         <company>Connor</company>
+         <description>Advanced RGB to Hydrogen Alpha (HA) conversion with multiple algorithms and enhancement options.</description>
+         <copyright>Copyright (c) 2024 Connor. All rights reserved.</copyright>
+         <license>Proprietary</license>
+         <url>https://github.com/ConnrCodes/RGB_TO_HA</url>
+         <email>connor@example.com</email>
+         
+         <platforms>
+            <platform>Windows</platform>
+            <platform>macOS</platform>
+         </platforms>
+         
+         <pixinsight-versions>
+            <version>1.8.8</version>
+            <version>1.8.9</version>
+         </pixinsight-versions>
+         
+         <dependencies>
+            <dependency>PCL 1.8.8</dependency>
+         </dependencies>
+         
+         <files>
+            <!-- Universal binary for all architectures -->
+            <file platform="Windows" arch="x64" url="https://connrcodes.github.io/RGB_TO_HA/downloads/RGBToHA-pxm.dll">RGBToHA-pxm.dll</file>
+            <file platform="macOS" arch="universal" url="https://connrcodes.github.io/RGB_TO_HA/downloads/RGBToHA-pxm.dylib">RGBToHA-pxm.dylib</file>
+            <file url="https://connrcodes.github.io/RGB_TO_HA/downloads/README.md">README.md</file>
+            <file url="https://connrcodes.github.io/RGB_TO_HA/downloads/LICENSE">LICENSE</file>
+         </files>
+         
+         <installation>
+            <target>modules</target>
+            <requires-restart>true</requires-restart>
+         </installation>
+         
+         <metadata>
+            <category>ColorTransformation</category>
+            <tags>RGB, HA, Hydrogen Alpha, Conversion, Astronomy, Astrophotography</tags>
+            <keywords>RGB to HA, color conversion, spectral processing, image enhancement</keywords>
+         </metadata>
+         
+         <changelog>
+            <version number="1.0.0" date="2024-12-01">
+               <change>Initial release</change>
+               <change>Four conversion algorithms: Standard, Advanced Spectral, Adaptive Multi-Scale, Neural Network</change>
+               <change>Advanced enhancement options: noise reduction, contrast boost, adaptive processing</change>
+               <change>Universal binary support: Intel Macs, Apple Silicon, x64 Windows</change>
+               <change>Professional GUI with tab-based interface</change>
+            </version>
+         </changelog>
+      </extension>
+   </extensions>
+</repository> 
